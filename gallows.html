@@ -22,16 +22,21 @@
         <div class="text-center">
         <input id="entrada" 
             class="entrada"
-            placeholder="Palavra secreta" autofocus>
+            placeholder="Palavra secreta" autofocus
+            onkeypress="controller.iniciaJogoOuProcessaChute(event)"
+        >
         </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/controller/JogoController.js"></script>
     <script src="js/modelo/Sprite.js"></script>
     <script src="js/modelo/Frame.js"></script>
     <script src="js/modelo/ListaDeFrames.js"></script>
     <script src="js/modelo/Jogo.js"></script>
+    
     <script>
+        var controller = new JogoController();
     </script>
 </body>
 </html>

@@ -16,8 +16,6 @@ Sprite.prototype.moveFrame = function(deFrame,paraFrame){
 }
 
 Sprite.prototype.reset = function(){
-    console.log(this._listaDeFrames.getFrameSelecionado());
-    console.log(this._listaDeFrames.selecionaPorPosicao(0));
     this.moveFrame(this._listaDeFrames.getFrameSelecionado(),
                    this._listaDeFrames.selecionaPorPosicao(0));
 }
